@@ -67,7 +67,7 @@ class App extends React.Component {
     app.models.predict(Clarifai.FACE_DETECT_MODEL, this.state.input)
       .then(response => {
         if(response) {
-          fetch("https://radiant-woodland-65884.herokuapp.com/image", {
+          fetch("", {
             method: "put",
             headers: {"Content-type": "application/json"},
             body: JSON.stringify({
