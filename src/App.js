@@ -67,7 +67,7 @@ class App extends React.Component {
     app.models.predict(Clarifai.FACE_DETECT_MODEL, this.state.input)
       .then(response => {
         if(response) {
-          fetch("", {
+          fetch("https://arcane-anchorage-24088.herokuapp.com/imageurl", {
             method: "put",
             headers: {"Content-type": "application/json"},
             body: JSON.stringify({
