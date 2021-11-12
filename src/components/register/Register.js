@@ -41,7 +41,7 @@ class Register extends react.Component {
 			console.log(data);
 			if(data) {
 				// this.props.loadUser(data);
-				console.log("true");
+				// console.log("true");
 				this.props.onRouteChange("signin");
 			}
 		})
